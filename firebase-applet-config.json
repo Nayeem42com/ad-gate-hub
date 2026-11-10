@@ -1,0 +1,4 @@
+{
+  "_deprecated": true,
+  "message": "Firebase configuration is now read from .env.local. Copy .env.example and fill VITE_FIREBASE_* values from your own Firebase Web App."
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Ad Gate Hub — Telegram Mini App & Centralized Advertising System",
+  "description": "A centralized advertising management system and Telegram Mini App with 21 independent ad slots, admin controls for Adsterra/Monetag/AdSense, lucky spin, daily check-in, task center, video ads, wallet, withdrawals, and referrals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

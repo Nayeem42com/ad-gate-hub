@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 54" width="270" height="54" fill="none">
+  <defs>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#0077FF" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFAA00" />
+      <stop offset="100%" stop-color="#FF6600" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Triangular Gate Emblem -->
+  <g transform="translate(6, 4)">
+    <!-- Outer Triangle / Arrow -->
+    <path d="M23 2 L43 38 L32 38 L32 44 L14 44 L14 38 L3 38 Z" fill="url(#cyanGrad)" stroke="#00F0FF" stroke-width="1.5" stroke-linejoin="round" />
+    <!-- Gate Arched Doorway -->
+    <path d="M19 44 L19 28 C19 24.5 27 24.5 27 28 L27 44 Z" fill="#090909" stroke="#00F0FF" stroke-width="1.5" />
+    <!-- Door Knob -->
+    <circle cx="21" cy="35" r="1" fill="#00F0FF" />
+    
+    <!-- Central Orange Gear / Hub with nodes -->
+    <circle cx="23" cy="22" r="5" fill="url(#orangeGrad)" filter="url(#glow)" />
+    <circle cx="23" cy="22" r="2.5" fill="#FFE599" />
+    <!-- Radiating Gear Nodes -->
+    <circle cx="23" cy="13" r="1.8" fill="#FFAA00" />
+    <line x1="23" y1="17" x2="23" y2="14" stroke="#FFAA00" stroke-width="1.5" />
+    <circle cx="31" cy="18" r="1.8" fill="#FFAA00" />
+    <line x1="27" y1="20" x2="30" y2="19" stroke="#FFAA00" stroke-width="1.5" />
+    <circle cx="31" cy="26" r="1.8" fill="#FFAA00" />
+    <line x1="27" y1="24" x2="30" y2="25" stroke="#FFAA00" stroke-width="1.5" />
+    <circle cx="15" cy="18" r="1.8" fill="#FFAA00" />
+    <line x1="19" y1="20" x2="16" y2="19" stroke="#FFAA00" stroke-width="1.5" />
+    <circle cx="15" cy="26" r="1.8" fill="#FFAA00" />
+    <line x1="19" y1="24" x2="16" y2="25" stroke="#FFAA00" stroke-width="1.5" />
+    
+    <!-- Dynamic Swoosh Trail -->
+    <path d="M25 18 C33 16 38 12 44 8 C40 16 34 22 27 25 Z" fill="url(#orangeGrad)" opacity="0.9" />
+  </g>
+
+  <!-- Typography: AD GATE HUB with clear full B -->
+  <text x="60" y="34" font-family="'Space Grotesk', 'DM Sans', sans-serif" font-weight="800" font-size="22" fill="#00F0FF" letter-spacing="1">AD GATE</text>
+  <text x="178" y="34" font-family="'Space Grotesk', 'DM Sans', sans-serif" font-weight="800" font-size="22" fill="#FFA116" letter-spacing="1">HUB</text>
+</svg>
